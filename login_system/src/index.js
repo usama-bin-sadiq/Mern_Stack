@@ -11,8 +11,8 @@ ReactDOM.render(
     
     <React.StrictMode>
          {/* <User></User> */}
-        <User name="usama"/>
-        <UserClass name="khan"/>
+        <User />
+        <UserClass  name = "Usama"/>
     </React.StrictMode>,
     document.getElementById("root")
 );

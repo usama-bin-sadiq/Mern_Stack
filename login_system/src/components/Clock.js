@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 
-export default class Clock extends Clock {
+export default class Clock extends Component {
     constructor(props){
         super(props);
-        this.this.state = {date:new Date()}
+        this.state = {date:new Date()}
     }
     tick(){
         this.setState({
-            date:new Date()
+            date:new Date(),
         })
     }
     componentDidMount(){
@@ -16,7 +16,7 @@ export default class Clock extends Clock {
     render(){
         return ( 
             <div className = "App">
-                <h2>This is {this.state.date.toLacaleTimeString()}</h2>
+                <h2>This is {this.state.date.toLocaleTimeString()}</h2>
             </div>  
         )
     }

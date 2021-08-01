@@ -25,12 +25,19 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 export default class Clock extends Component {
+
+  
+    handleClick (e) {
+        console.log(e.target)
+    }
     render() {
         return (
             <div className="App">
                 <a href="#" onClick={()=>console.log("Click me is fired")}>Click ME</a>
                 <p></p>
                 <a href="#" onClick={(e)=>console.log(e.target)}>Click ME 1</a>
+                <p></p>
+                <a href="#" onClick= {this.handleClick}>Click ME 2</a>
 
             </div>
         )

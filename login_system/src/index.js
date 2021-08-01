@@ -12,7 +12,7 @@ ReactDOM.render(
     <React.StrictMode>
          {/* <User></User> */}
         <User />
-        <UserClass  name = "Usama"/>
+        {/* <UserClass  name = "Usama"/> */}
     </React.StrictMode>,
     document.getElementById("root")
 );

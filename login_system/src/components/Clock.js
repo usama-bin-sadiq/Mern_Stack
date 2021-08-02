@@ -26,8 +26,15 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 export default class Clock extends Component {
 
-  
+    constructor ( props ) {
+        super(props);
+        this.state = {isToggleOn : true};
+        this.handleClick = this.handleClick.bind(this);
+    }
     handleClick (e) {
+        this.setState(state =>({
+            isToggleOn: !state.isToggleOn
+        }))
         console.log(e.target)
     }
     render() {
@@ -38,7 +45,10 @@ export default class Clock extends Component {
                 <a href="#" onClick={(e)=>console.log(e.target)}>Click ME 1</a>
                 <p></p>
                 <a href="#" onClick= {this.handleClick}>Click ME 2</a>
-
+                    <p></p>
+                <button onClick ={this.handleClick}>
+                {this.state.isToggleOn?'ON':'OFF'}
+                </button>
             </div>
         )
     }

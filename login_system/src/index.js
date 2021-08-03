@@ -8,9 +8,9 @@ import UserClass from "./components/UserClass"
 
 
 ReactDOM.render(
-    
+
     <React.StrictMode>
-         {/* <User></User> */}
+        {/* <User></User> */}
         <User />
         {/* <UserClass  name = "Usama"/> */}
     </React.StrictMode>,

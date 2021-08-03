@@ -1,5 +1,5 @@
 import React from 'react';
-import  ReactDOM  from 'react-dom';
+import ReactDOM from 'react-dom';
 import Clock from './Clock';
 
 //functional react component
@@ -29,7 +29,7 @@ import Clock from './Clock';
 
 export default function User(props) {
     return (
-        <div className = "App">
+        <div className="App">
             {/* <h2>This is {props.name}</h2> */}
             <Clock />
         </div>
